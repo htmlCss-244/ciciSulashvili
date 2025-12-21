@@ -1,0 +1,79 @@
+body{
+    style="background-color: aqua;
+    font-family: "Montserrat", sans-serif;
+}
+.cici
+{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    }
+
+    #love
+    {
+    color: blue;
+    text-align: center;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-around;
+}
+.aaa a
+{
+    flex-direction: column;
+    text-underline-offset: 15px;
+    font-size: 25px;
+}
+.montserrat
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+.main ol
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main ol li img
+{
+    height: 250 !important;
+    height: 250 !important;
+    object-fit: cover;
+    display: block;
+
+}
+.foot
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+.big
+{
+    width: 300px;
+    height: 40px;
+    background-color: aqua;
+    border: 2px solid aqua;
+
+}
+.small
+{
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
