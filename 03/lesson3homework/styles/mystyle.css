@@ -1,0 +1,80 @@
+h1 
+ { color: #07074b;
+    font-size: 48px;
+    text-align: center;
+ }
+h2 
+ {
+    color: #07074b;
+    text-align: center;
+ }
+ h5
+ {
+    color: #07074b;
+    font-size: 20px;
+    border: 2px dotted #f82525;
+    didplay: block;
+    background-color: bisque;
+ }
+.myP
+ {
+    color: rgb(47, 25, 25);
+    font-size: 30px;
+    text-align: center;
+    display: block;
+   
+ }
+ .myimg
+ { 
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 15%;
+    align-items: center;
+
+}
+.big-link
+{
+    font-size: 25px;
+}
+table
+{
+    border: 2px solid black;
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+tr
+{
+    border: 2px solid black;
+}
+th
+{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: aqua;
+}
+td
+{
+    border: 2px dashed brown;
+    background-color: rgb(86, 192, 190);
+}
+th, td
+{
+    text-align: center;
+    padding: 10px;
+}
+.mypics
+{
+    display: inline-block;
+    border-radius: 15%;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+}
+.box
+{
+    border: 2px solid rgb(22, 20, 21);
+    align-items: center;
+    background-color: rgb(251, 184, 205);
+    padding: 10px;
+}
