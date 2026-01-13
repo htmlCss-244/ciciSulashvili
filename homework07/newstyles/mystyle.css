@@ -1,0 +1,156 @@
+.body1{
+    background-color: rgb(97, 97, 85);
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.navbar a:hover {
+    background-color: #ff4081;
+    border-radius: 15px;
+}
+.social-panel {
+    position: fixed;
+    background-color: #1e1e1e;
+    left: 0;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    }
+.social-panel a img {
+    width: 50px;
+    height: 50px;
+}
+    
+.social-panel a:hover {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    transform: scale(1.1);
+    border: 3px solid red;
+    cursor: pointer;
+    }
+.container {
+    width: 80%;
+    margin: 40px auto;
+    }
+p {
+    margin-bottom: 25px;
+    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    }
+
+td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    }
+
+td:hover {
+    background-color: #f8bbd0;
+    transform: scale(1.05);
+    }
+.stars {
+    color: gold;
+    font-size: 18px;
+    }
+.comment-box{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: aquamarine;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    gap: 15px;
+}
+.addst{
+    position: sticky;
+    border-top-left-radius: 0%;
+    gap: 10px;
+}
+.addst img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+input{
+    height: 80px;
+    width: auto;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgb(250, 209, 209);
+    border-radius: 15%;
+}
+.rel{
+    position: relative;
+    background: #7fd3b2;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.back{
+    background-color: red;
+    color: #ccc;
+}
+.back:hover{
+    backcolor: rgb(245, 158, 81);
+    color: blue;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+.send{
+    background-color: green;
+    color: #ccc;
+}
+.send:hover{
+    background-color: rgb(187, 234, 95);
+    transform: scale(1.2);
+    color: blueviolet;
+    cursor: pointer;
+}
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 50px;
+    }
+
+footer div {
+    width: 30%;
+    }
