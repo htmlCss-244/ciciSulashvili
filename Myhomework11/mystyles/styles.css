@@ -1,0 +1,345 @@
+body {
+    background: wheat;
+}
+@font-face {
+font-family: newfont;
+src: url(../fonts/GALS.TTF);
+}
+@font-face {
+    font-family: h1font;
+    src: url(../fonts/UNDERYOURBED.OTF);
+}
+@font-face {
+    font-family: cici;
+    src: url(../fonts/CICISFONT-REGULAR.TTF);
+}
+@font-face {
+    font-family: fff;
+    src: url(../fonts/CALIBRII.TTF);
+}
+.H1txt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(126, 171, 230, 0.25);
+    border-radius: 10%;
+}
+.H1txt h1 {
+    font-size: 40px;
+    font-family: h1font;
+    font-weight: bold;
+    color: rgb(38, 38, 185);
+    text-shadow: 8px 7px 8px black;
+    margin: 0;
+
+}
+.Ptxt {
+    font-size: 25px;
+    font-family: newfont;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(168, 14, 45);
+    text-shadow: 8px 7px 8px black;
+    padding: 10px;
+   margin-top: 10px;
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    animation: sliderAnimation 25s infinite;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+@keyframes sliderAnimation {
+    0% { background-image: url(../images/NICU\ Survival\ Tips\ &\ Packing\ List.jpg);}
+    33% { background-image: url(../images/NICU\ Nursing.jpg);}
+    66% { background-image: url(../images/Mon\ bébé\ est\ né\ prématuré\ _\ quels\ risques\ pour\ lui….jpg);}
+    100% { background-image: url(../images/download\ \(2\).jpg);}
+}
+ nav a::after {
+  content: "🩺";
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 32px;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    background-color: rgba(44, 129, 137, 0.60);
+    justify-content: center;
+    margin-bottom: 0;
+    gap: 20px;
+    padding: 0;
+}
+.navbar a {
+    font-family: newfont;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: rgba(60, 103, 243, 0.5);
+    border: rgb(16, 16, 39) solid 1px;
+    color: red;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.slidewrapper {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    background-color: rgba(44, 129, 137, 0.60);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.SlideText {
+    position: absolute;
+    font-family: newfont;
+    font-size: 16px;
+    color: red;
+    animation: MySlide 60s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+}
+@keyframes MySlide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divcont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1000px;
+    height: 800px;
+    gap: 3px;
+    padding: 10px;
+    grid-template-areas: "div1 div2"
+                            "div3 div3";
+    text-align: center;
+}
+.div1 {
+    grid-area: div1;
+    border:rgb(38, 38, 185) solid 1px;
+    background: rgba(60, 53, 145, 0.5);
+    
+}
+.div2 {
+    grid-area: div2;
+    border:rgb(38, 38, 185) solid 1px;
+    background: rgba(60, 53, 145, 0.5);
+}
+.div3 {
+    grid-area: div3;
+    border:rgb(38, 38, 185) solid 1px;
+    background: rgba(60, 53, 145, 0.5);
+}
+.div1, .div2, .div3 {
+  display: flex;            
+  flex-direction: column;     
+  justify-content: center;   
+  align-items: center;        
+  text-align: center; 
+  padding:10px;
+}
+.divbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1000px;
+    height: 800px;
+    gap: 3px;
+    padding: 10px;
+    grid-template-areas: "div4 div4"
+                            "div5 div6";
+    text-align: center;
+}
+.div4 {
+    grid-area: div4;
+    border:rgb(38, 38, 185) solid 1px;
+    background: rgba(60, 53, 145, 0.5);
+    
+}
+.div5 {
+    grid-area: div5;
+    border:rgb(38, 38, 185) solid 1px;
+    background: rgba(60, 53, 145, 0.5);
+}
+.div6 {
+    grid-area: div6;
+    border:rgb(38, 38, 185) solid 1px;
+    background: rgba(60, 53, 145, 0.5);
+}
+.div4, .div5, .div6 {
+  display: flex;            
+  flex-direction: column;     
+  justify-content: center;   
+  align-items: center;        
+  text-align: center; 
+  padding:10px;
+}
+.maindiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: newfont;
+    font-size: 15px;
+}
+footer {
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100px;
+
+}
+.footdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+#p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: newfont;
+    color: rgb(38, 38, 185);
+}
+#p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: fff;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 200px);
+  gap: 15px;
+  padding: 40px;
+}
+
+.gallery .big {
+  grid-row: span 2;
+  border-radius: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.3s;
+}
+
+.gallery img:hover {
+  opacity: 0.85;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.video-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(60, 53, 145, 0.2);
+}
+
+.video-section h2 {
+  font-family: h1font;
+  font-size: 32px;
+  color: rgb(38, 38, 185);
+  margin-bottom: 25px;
+}
+
+.nicu-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.video-text {
+  margin-top: 20px;
+  font-family: newfont;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.myvideos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+    margin: 0 auto;
+}
+.video-box {
+    flex: 1;
+}
+.video-box video, .video-box iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  display: block;
+}
+@media (max-width: 900px) {
+  .myvideos {
+    flex-direction: column;
+  }
+}
+.video-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-family: newfont;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.primary-btn {
+  background: rgb(38, 38, 185);
+  color: white;
+}
+.primary-btn:hover {
+  background: rgb(158, 12, 17);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.secondary-btn {
+  border: 2px solid rgb(38, 38, 185);
+  color: rgb(38, 38, 185);
+}
+.secondary-btn:hover {
+  background: rgb(38, 38, 185);
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
