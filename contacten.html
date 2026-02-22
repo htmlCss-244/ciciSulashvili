@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Tbilisi Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/mystyle.css">
+</head>
+<body class="contactBody">
+    <header>
+        <nav class="navbar">
+            <div class="logo">TBILISI <span>GUIDE</span></div>
+            <div class="nav-links">
+                <a href="indexen.html">Home</a>
+                <a href="aboutusen.html">About Us</a>
+                <a href="servicesen.html">Services</a>
+                <a href="blogen.html">Blog</a>
+                <a href="contacten.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main class="contact-main">
+        <section class="ourcontactinfo">
+            <h1>Contact Us</h1>
+            <p>Any questions? Write to us and our team will get back to you soon.</p>
+        </section>
+        <div class="form-Container">
+            <form id="contactForm" class="styledForm">
+                <div class="personalInfo">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name...">
+                </div>
+                <div class="personalInfo">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com">
+                </div>
+
+                <div class="personalInfo">
+                    <p>Subject:</p>
+                    <div class="options">
+                        <input type="radio" id="tour" name="subject" value="tour" checked>
+                        <label for="tour">Tours</label>
+                        
+                        <input type="radio" id="hotel" name="subject" value="hotel">
+                        <label for="hotel">Hotel</label>
+                        
+                        <input type="radio" id="other" name="subject" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="personalInfo">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" placeholder="Your message..."></textarea>
+                </div>
+
+                <div class="input-group checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe" id="News">Subscribe to newsletter</label>
+                </div>
+
+                <button type="submit" class="submitBtn">Send</button>
+                <p id="form-feedback" class="feedback-msg"></p>
+            </form>
+        </div>
+    </main>
+    <footer class="footerSection">
+        <div class="copyRight">
+            <p>© 2026 Tbilisi Guide. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/myjavascr.js"></script>
+</body>
+</html>
