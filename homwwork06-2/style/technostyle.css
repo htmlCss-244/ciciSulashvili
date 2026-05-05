@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(88, 53, 53);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.start {
+   width: 100%;
+}
+#webpic {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+#h1text {
+    font-size: 40px;
+    color: rgb(15, 15, 25);
+    text-align: center;
+}
+#ptext1 {
+    font-size: 22px;
+    font-style: italic;
+    color: rgb(15, 15, 25);
+    font-weight: bold;
+    text-align: center;
+}
+.pictures {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pic {
+    width: 300px;
+    padding: 20px;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; 
+}
+#pic2 {
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+#pic2:hover {
+transform: scale(1.1);
+border: 3px solid red;
+background-color: red;
+cursor: pointer;
+}
+.maininfo {
+    text-align: center;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(15, 15, 25);
+}
+.highlight {
+    color: rgb(141, 243, 63);
+    font-weight: bold;
+    font-style: italic;
+}
+.mytable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.mytable thead th {
+    background-color: rgb(75, 204, 161);
+    color: black;
+}
+.mytable th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+.mytable tbody tr:nth-child(1) {
+    background-color: bisque;
+    color: black;
+}
+.mytable tbody tr:nth-child(2) {
+    background-color: bisque;
+    color: black;
+}
+.mytable tbody tr:nth-child(3) {
+    background-color: bisque;
+    color: black;
+}
+.mytable tbody td {
+    border-bottom: 1px solid#2ea871;
+}
+.mytable tbody tr:last-child {
+    border-bottom: 3px solid#2ea871;
+}
+.mytable tbody tr.tr2:hover {
+background-color: rgb(187, 120, 250);
+cursor: pointer;
+}
+.yourmind {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.parent {
+    display: flex;
+    justify-content: center;
+}
+.whriteTxt {
+    width: 600px;
+    height: 30px;
+    margin: 0;
+    display: block;
+    background-color: blanchedalmond;
+    color:red;
+    font-style: italic;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+.btn button {
+    background-color: #60c8f5;
+    color: blue;
+    border: none;
+    padding: 10px;
+}
+.whriteTxt:hover {
+    background-color: rgb(185, 125, 240);
+    cursor: pointer;
+}
+.whriteTxt:focus {
+    background-color: #07ac62;
+    cursor: pointer;
+}
+.btn button:hover {
+    background-color: #067b47;
+    color: black;
+    cursor: pointer;
+}
+.btn button:active {
+    background-color: rgb(193, 184, 15);
+}
+#theEnd {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: rgb(17, 16, 16);
+}
