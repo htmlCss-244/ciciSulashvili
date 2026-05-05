@@ -1,0 +1,28 @@
+table
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+tr
+{
+    border: 2px solid black;
+}
+th,td
+{
+    border: 2px solid black;
+    padding: 10px;
+}
+.jjj
+{
+    background-color: rgb(242, 242, 132);
+}
+.ggg
+{
+    background-color:green;
+}
+.bbb
+{
+    background-color:rgb(108, 108, 238);
+}
