@@ -1,0 +1,90 @@
+           .pageSize  {
+                width: 960px;
+                height: 978px;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+            }
+
+            nav a {
+                font-size: 24px;
+                color: black;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                margin: 50px;
+                text-underline-offset: 15px;
+                text-decoration-thickness: 50px;
+            }
+            .textadd {
+                display: flex;
+                justify-content: center;
+            }
+
+            #mainText {
+                font-size: 64px;
+                margin: 0;
+                margin-top: 66px;
+                margin-bottom: 55px;
+            }
+            .figmapics {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+            
+
+            .picDots {
+                display: flex;
+                justify-content: center;
+            }
+
+            
+
+            #dots {
+                display: flex;
+                flex-direction: column;
+                font-size: 25px;
+                margin: 0;
+            }
+
+            #text2 {
+                font-size: 25px;
+                border-radius: 20px;
+                border: 1px solid black;
+                padding: 10px;
+                margin: 0;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .box {
+                width: 960px;
+                height: 128px;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+            .secondBox {
+                display: flex;
+                border: 8px solid black;                
+                padding: 10px;
+            }
+            label {
+                width: 80px;
+                font-weight: bold;
+                text-align: left;
+                padding-left: 10px;
+            }
+            input {
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
