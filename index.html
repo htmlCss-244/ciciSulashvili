@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ka">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Cici Sulashvili">
+        <meta name="description" content="Tbilisi Minimal - შენი გზამკვლევი თბილისის ყველაზე ესთეტიკურ ადგილებში. აღმოაჩინე გამორჩეული კაფეები, გალერეები და ქალაქის მინიმალისტური არქიტექტურა.">
+        <meta name="keywords" content="თბილისი, გზამკვლევი, საუკეთესო კაფეები თბილისში, ესთეტიკური ადგილები, მინიმალისტური დიზაინი, თბილისის არქიტექტურა, სად წავიდეთ თბილისში, თანამედროვე ხელოვნება, თბილისური სადარბაზოები, კონცეპტუალური სივრცეები">
+        <meta property="og:title" content="bilisi Minimal — გზამკვლევი ქალაქის ესთეტიკურ წერტილებში"/>
+        <meta property="og:image" content="./images/meidan.jpg"/>
+        <meta property="og:description" content="აღმოაჩინე თბილისის საუკეთესო კაფეები, დამალული სადარბაზოები და მინიმალისტური არქიტექტურა ერთ სივრცეში."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://tbilisiguide.ge"/>
+        <title>Tbilisi Guide</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="./styles/mystyle.css">
+            </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo-container">
+                <div class="logo">TBILISI <span>GUIDE</span></div>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">მთავარი</a>
+                    <a href="aboutus.html">ჩვენს შესახებ</a>
+                    <a href="services.html">სერვისები</a>
+                    <a href="blog.html">ბლოგი</a>
+
+                    <span id="user-greeting" class="nav-msg"></span>
+                    <a href="register.html" id="auth-link">login/register</a>
+                    <button  id="logout-btn" style="display: none;" class="logout-style">გამოსვლა</button>
+                </div>
+            </nav>
+
+            <div class="weather-bar">
+        <div id="weather-content">
+            <span class="city-name">თბილისი</span>
+            <img id="weather-icon" src="" alt="ამინდი" style="display:none;">
+            <span id="temp">--</span>°C
+            <span id="weather-desc">იტვირთება...</span>
+        </div>
+            </div>
+        </header>
+        
+        <main>
+        <section class="mainTop">
+                <img class="mainImg" src="./images/tbilisiMain.jpg" alt="tbilisi-center">
+            <div class="main-content">
+                <h1>აღმოაჩინე თბილისი</h1>
+                <p>ლოკაციები, რომლებიც ქალაქის რიტმს ქმნიან</p>
+            </div>
+        </section>
+        <section class="forJS">
+            <img class="picFORjs" src="./images/atb.jpg" alt="tbilisi is very beautiful city">
+
+            <div class="forSearch">
+            <h1>თბილისის სხვადასხვა ლოკაციები</h1>
+            <input type="text" id="searchInput" placeholder="მოძებნე სასურველი ლოკაცია კატეგორიით...">
+            </div>
+
+            <div id="locations-container" class="grid-container">
+            </div>
+            </section>
+
+        <section class="first-location">
+    <div class="middleImg">
+        <div class="slideImg-left">
+            <img src="./images/fab3.jpg" alt="fabrika-left">
+        </div>
+
+        <div class="slideImg-right">
+            <img src="./images/fab4.jpg" alt="fabrika-right">
+        </div>
+
+        <div class="main-img">
+            <img src="./images/fabrika2.jpg" alt="fabrika-main">
+            <div class="caption">
+                <p>ფაბრიკის შიდა ეზო <br> და რიტმი</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="locInfo">
+        <div class="loctexts">
+            <h2>FABRIKA TBILISI</h2>
+            <p>ძველი სამკერვალო ფაბრიკა, რომელიც ქალაქის მთავარ შეხვედრის ადგილად იქცა.</p>
+        </div>
+        <div class="location-details">
+            <span>📍 ნინოშვილის ქ. 8</span>
+            <span>📞 +995 32 202 03 99</span>
+            <span>📩 <a href="http://fabrikatbilisi.com" target="_blank">fabrikatbilisi.com</a></span>
+        </div>
+        <div class="locmap1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23828.115798904586!2d44.802886!3d41.709416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440ccd352e52b5%3A0xf42bc14f3c7d7a1a!2sFabrika%20Tbilisi!5e0!3m2!1sen!2sge!4v1771236083957!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+        </section>
+        <section class="second-location">
+            <div class="wineFactcont">
+                <div class="wineInfo">
+                    <h3>ღვინის ქარხანა N1</h3>
+                    
+                    <p>📍 მისამართი: მ. კოსტავას 1</p>
+                    <p>📞 ტელეფონი:</p><a href="+995322301111">+995 32 2 30 11 11</a>
+                    
+                    <p>🌐 საიტი: <a href="http://www.winefactory.ge" target="_blank">winefactory.ge</a></p>
+
+                    <div class="mini-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.2555262776277!2d44.77855497632494!3d41.70852297126083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440dda6bc66729%3A0x4c6a3c310db8484e!2sWine%20Factory%20N1!5e1!3m2!1sen!2sge!4v1771236205575!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="winecover">
+                    <img src="./images/wine-factory.jpg" alt="wine-factory">
+                    <span class="info-label">ნახე დეტალები</span>
+                </div>
+                <div class="winegallery">
+                    <div class="pic1"> <img src="./images/terasa.jpg" alt="terasa"></div>
+                    <div class="pic2"> <img src="./images/winebarrels.jpg" alt="wine barrels"></div>
+                    <div class="pic3"> <img src="./images/teko-taco.jpg" alt="teko's taco"></div>
+                    <div class="pic4"> <img src="./images/inbar.jpg" alt="inbar"></div>
+                    <div class="pic5"> <img src="./images/bottles.jpg" alt="bottles"></div>
+                    <div class="pic6"> <img src="./images/wine-bar.jpg" alt="wine barrels"></div>
+                    <div class="pic7"> <img src="./images/tables.jpg" alt="tables"></div>
+                    <div class="pic8"> <img src="./images/flowers.jpg" alt="flowers"></div>
+                    <div class="pic9"> <img src="./images/wine-elMusic.jpg" alt="elmusic"></div>
+                    <div class="pic10"> <img src="./images/qiqodze.jpg" alt="terasa"></div>
+                </div>
+            </div>
+            <div class="third-location">
+                <div class="stambaInfo">
+                    <h3>სტამბა / Stamba Hotel</h3>
+                    <p>📍 მისამართი: მ. კოსტავას 14</p>
+                    <p>📞 ტელეფონი:</p> <a href="tel:+995322021199">+995 322 02 11 99</a>
+                    <p>🌐 საიტი: <a href="https://stambahotel.com" target="_blank">stambahotel.com</a></p>
+                    <div class="mini-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12845.593322977968!2d44.787875!3d41.705664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cda636316d7%3A0xfdaee73a055cb6af!2sStamba%20Hotel!5e1!3m2!1sen!2sge!4v1771236265511!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="stambaCover">
+                    <img src="./images/stambacover.jpg" alt="stambacover">
+                    <h2 class="cover-title">სტამბა</h2> 
+                    <span class="info-label">ნახე დეტალები</span>
+                </div>
+                
+                 <div class="stambagallery">
+                    <div class="p1"> <img src="./images/stamba1.jpg" alt="stamba1"></div>
+                    <div class="p2"> <img src="./images/stamba2.jpg" alt="stamba2"></div>
+                    <div class="p3"> <img src="./images/stamba3.jpg" alt="stamba3"></div>
+                    <div class="p4"> <img src="./images/stamba4.jpg" alt="stamba4"></div>
+                    <div class="p5"> <img src="./images/stamba5.jpg" alt="stamba5"></div>
+                    <div class="p6"> <img src="./images/stamba6.jpg" alt="stamba6"></div>
+                    <div class="p7"> <img src="./images/stamba7.jpg" alt="stamba7"></div>
+                    <div class="p8"> <img src="./images/stamba9.jpg" alt="stamba9"></div>
+                    <div class="p9"> <img src="./images/stamba10.jpg" alt="stamba10"></div>
+                    <div class="p10"> <img src="./images/stamba8.jpg" alt="stamba8"></div>
+                </div>
+            </div>
+        </section>
+        <section class="multi-locations">
+                    <div class="dice-grid">
+                    <div class="topLeft">
+                    <div class="locationCard">
+                    <div class="card-img">
+                        <img src="./images/bridgeofpeace.jpg" alt="მშვიდობის ხიდი">
+                    </div>
+                    <div class="card-info">
+                    <h3>მშვიდობის ხიდი</h3>
+                    <p class="description">თანამედროვე შუშის ხიდი, რომელიც ძველ და ახალ თბილისს აკავშირებს.</p>
+                    </div>
+                    <div class="card-address">
+                        <span>მისამართი: რიყის პარკი, თბილისი</span>
+                    </div>
+                    <div class="card-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25696.627476965677!2d44.810509!3d41.692046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cfae6b42e2d%3A0x7113a448ec104f5b!2sRike%20Park!5e1!3m2!1sen!2sge!4v1771236371796!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="topRight">
+                    <div class="locationCard">
+                    <div class="card-img">
+                    <img src="./images/abanotubani.jpg" alt="აბანოთუბანი">
+                    </div>
+                    <div class="card-info">
+                        <h4>აბანოთუბანი</h4>
+                        <p class="description">თბილისის ისტორიული უბანი, რომელიც ცნობილია გოგირდის აბანოებით.</p>
+                    </div>
+                    <div class="card-address">
+                        <span>მისამართი: აბანოს ქუჩა, თბილისი</span>
+                    </div>
+                    <div class="card-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102793.0019823925!2d44.811154!3d41.687983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf6538f0bb9%3A0x151595bbbcff7c94!2sAbanotubani%2C%20Tbilisi!5e1!3m2!1sen!2sge!4v1771236433761!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="diceCenter">
+                    <div class="locationCard">
+                    <div class="card-img">
+                        <img src="./images/narikala.jpg" alt="ნარიყალა">
+                    </div>
+                    <div class="card-info">
+                        <h4>ნარიყალა</h4>
+                        <p class="description">ქალაქის მთავარი ციხესიმაგრე, საიდანაც იშლება თბილისის საუკეთესო ხედი.</p>
+                    </div>
+                    <div class="card-address">
+                        <span>მისამართი: ნარიყალას აღმართი, თბილისი</span>
+                    </div>
+                    <div class="card-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25693.96891349453!2d44.75716103476561!3d41.698700642793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf6937ee797%3A0x1442cb37b4b70cd!2sNarikala%20Fortress!5e1!3m2!1sen!2sge!4v1771236543125!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="bottomLeft">
+                    <div class="locationCard">
+                    <div class="card-img">
+                        <img src="./images/mtatsminda.jpg" alt="მთაწმინდა">
+                    </div>
+                    <div class="card-info">
+                        <h4>მთაწმინდა</h4>
+                        <p class="description">გასართობი პარკი და თბილისის ყველაზე მაღალი წერტილი.</p>
+                    </div>
+                    <div class="card-address">
+                    <span>მისამართი: მთაწმინდის პარკი, თბილისი</span>
+                    </div>
+                        <div class="card-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102784.16716946985!2d44.62813619726561!3d41.69351209999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cc00a79a799%3A0x8accaace2cb10853!2sMtatsminda%20Park!5e1!3m2!1sen!2sge!4v1771236596887!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+                </div>
+                <div class="bottomRight">
+                <div class="locationCard">
+                <div class="card-img">
+                    <img src="./images/metekhi.jpg" alt="მეტეხი">
+                </div>
+                <div class="card-info">
+                    <h4>მეტეხი</h4>
+                    <p class="description">ღვთისმშობლის შობის ტაძარი კლდის პირზე, ქალაქის ერთ-ერთი სიმბოლო.</p>
+                </div>
+                <div class="card-address">
+                    <span>მისამართი: მეტეხის აღმართი, თბილისი</span>
+                </div>
+                <div class="card-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25697.362105640204!2d44.811169!3d41.690207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf75a5396ad%3A0xa274db7ff397cae!2sMetekhi%20church%20of%20the%20Nativity%20of%20the%20Mother%20of%20God!5e1!3m2!1sen!2sge!4v1771236632114!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+                </div>
+        </div>
+        </section>
+        <section class="tivisSection">
+            <div class="twoareas">
+            <div class="leftside">
+            <div class="boatcont">
+                <div class="boattour">
+                    <img src="./images/boatcover.jpg" alt="boat-tour">
+                    <div class="boatcard">
+                        <h2>ნავით სეირნობა</h2>
+                        <p>აღმოაჩინე მტკვრის ხეობა და დააგემოვნე ქართული ღვინო ნავზე</p>
+                        <button class="boatBtn">ნახე ვრცლად ↓</button>
+                </div>
+                </div>
+                <div class="boatsGrid">
+                    <div class="g1">
+                        <img src="./images/boat1.jpg" alt="boat N1">
+                        <div class="boatcaption">
+                            <h3>Mtkvari Classic</h3>
+                            <p>📍 მეტეხის ხიდი</p>
+                            <a href="tel:+995599123456">📞+995 599 12 34 56</a>
+                            <a href="https://wa.me/995599123456" class="wa-btn">WhatsApp</a>
+                        </div>
+                        </div>
+                    <div class="g2">
+                        <img src="./images/boat2.jpg" alt="boat-justice">
+                        <div class="boatcaption">
+                        <h4>Old Town Boat</h4>
+                        <p>📍 რიყის პარკი</p>
+                        <a href="tel:+995577987654">📞+995 577 98 76 54</a>
+                        <a href="https://wa.me/995577987654" target="_blank" class="wa-btn">WhatsApp</a>
+                    </div>
+                    </div>
+                    <div class="g3"><img src="./images/boat5.jpg" alt="wine on the boat">
+                        <div class="boatcaption">
+                        <h4>Wine Cruise</h4>
+                        <p>📍 მშრალი ხიდი</p>
+                        <a href="tel:+995555443322">📞+995 555 44 33 22</a>
+                        <a href="https://wa.me/995555443322" target="_blank" class="wa-btn">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="museumcontainer">
+                <div class="museums">
+                    <img src="./images/museumcover.jpg" alt="museum">
+                    <div class="muscard">
+                        <h2>მუზეუმები</h2>
+                        <p>აღმოაჩინე ქართული კულტურა</p>
+                        <button class="museumBtn">ნახე ვრცლად ↓</button>
+                </div>
+                </div>
+                <div class="museumGrid">
+                    <div class="m1">
+                        <img src="./images/museumNational.jpg" alt="National museum">
+                        <div class="museumcaption">
+                            <h3>საქართველოს ეროვნული 
+                                <br>მუზეუმი</h3>
+                            <a href="https://maps.app.goo.gl/YM4x2epqu3BwxDAAA">📍შოთა რუსთაველის გამზირი 3</a>
+                            <a href="tel:+995322997176">📞 032 299 71 76</a>
+                            <a href="https://museum.ge/index.php?m=2" target="_blank">🌐 ვებსაიტი</a>
+                        </div>
+                        </div>
+                    <div class="m2">
+                        <img src="./images/museumEthnography.jpg" alt="ethnography museum">
+                        <div class="museumcaption">
+                        <h4>თბილისის ეთნოგრაფიული 
+                            <br>მუზეუმი</h4>
+                        <a href="https://maps.app.goo.gl/JJhaQaaucsoA3DC69">📍 კუს ტბის გზა 1</a>
+                        <a href="tel:+995322729045">📞032 272 90 45</a>
+                        <a href="https://georgiantravelguide.com/ka/tbilisis-etnografiuli-muzeumi" target="_blank">🌐 ვებსაიტი</a>
+                    </div>
+                    </div>
+                    <div class="m3">
+                        <img src="./images/museumHistory.jpg" alt="history museum">
+                        <div class="museumcaption">
+                        <h4>თბილისის ისტორიული 
+                            <br>მუზეუმი (ქარვასლა)</h4>
+                        <a href="https://maps.app.goo.gl/DqKpkxJ7ZLhYVjwF7">📍სიონის ქუჩა 8</a>
+                        <a href="tel:+995322982281">📞+995 32 298 22 81</a>
+                        <a href="https://www.facebook.com/tbilisihistorymuseum/about?locale=ka_GE" target="_blank">𝗳acebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="rightside">
+            <div class="bookingCont">
+                <div class="mybooking">
+                    <h2>იპოვნე სასტუმრო თბილისში</h2>
+                    <p>შეადარე ფასები და დაჯავშნე საუკეთესო აპარტამენტები www.airbnb.com-ზე</p>
+                    <span>24/7 მხარდაჭერა</span>
+                    </div>
+                    <a href="https://www.airbnb.com/tbilisi-georgia/stays" target="_blank" class="airbnbBtn">დაჯავშნე სასტუმრო</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="tbshistory">
+                <div class="tbsCard">
+            <h2>თბილისის ისტორია</h2>
+            <p>თბილისი, საქართველოს დედაქალაქი, V საუკუნეში დაარსდა მეფე ვახტანგ გორგასლის მიერ.
+            ლეგენდის მიხედვით, მეფემ ნადირობისას შველი დაიჭრა, რომელიც ცხელ წყაროში ჩავარდა და განიკურნა.
+            ამ ფაქტით მოხიბლულმა მეფემ ქალაქის აშენება ბრძანა, რომელსაც "თბილი" წყლების გამო თბილისი ეწოდა.
+            საუკუნეების განმავლობაში თბილისი მრავალი კულტურის გზაჯვარედინზე მდებარეობდა, რაც მის არქიტექტურასა და 
+            ხასიათზე აისახა. იგი დღესაც რჩება კავკასიის რეგიონის ერთ-ერთ უმნიშვნელოვანეს კულტურულ, ეკონომიკურ და
+             პოლიტიკურ ცენტრად.</p>
+             <button id="openFact" class="facts">გაიგე მეტი...</button>
+            </div>
+           
+             <div id="NewFact" class="tbNewFact">
+                <div id="factContent" class="tbFactContent">
+                    <span id="closeBtn" class="tbcloseBtn">&times</span>
+                </div>
+             </div>
+        </section>
+        </main>
+
+        <footer class="footerSection">
+            <div class="footercontainer">
+                <div class="footercontent">
+                    <h3>TBILISI GUIDE</h3>
+                    <p>აღმოაჩინე თბილისის დამალული 
+                        <br>მარგალიტები, საუკეთესო ტურები 
+                        <br>და კომფორტული სასტუმროები 
+                        <br>ერთ სივრცეში.</p>
+                    </div>
+                    <div class="footerLinks">
+                        <ul>
+                            <li><a href="#">მთავარი</a></li>
+                            <li><a href="#">ტურები</a></li>
+                            <li><a href="#">მუზეუმები</a></li>
+                            <li><a href="#">ისტორია</a></li>
+                        </ul>
+                    </div>
+                    <div class="contactInfo">
+                        <a href="mailto:info@08.ge">ელ.ფოსტა: info@08.ge</a>
+                        <a href="tel:+995322910808">📞+995 322 91 08 08</a>
+                        <div class="socialIcons">
+                            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="copyRight">
+                        <p>© 2026 Tbilisi Guide. All rights reserved.</p>
+                    </div>
+        </footer>
+        <script type="module" src="./js/app.js"></script>
+        </body>
+        </html>

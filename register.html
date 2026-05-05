@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login/register - Tbilisi Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/mystyle.css">
+</head>
+<body class="contactBody">
+    <header>
+        <nav class="navbar">
+            <div class="logo">TBILISI <span>GUIDE</span></div>
+            <div class="nav-links">
+                <a href="index.html">მთავარი</a>
+                <a href="aboutus.html">ჩვენს შესახებ</a>
+                <a href="services.html">სერვისები</a>
+                <a href="blog.html">ბლოგი</a>
+                <a href="contact.html">login/register</a>
+            </div>
+        </nav>
+    </header>
+    <main class="contact-main">
+        <section class="ourcontactinfo">
+            <h1>შესვლა/რეგისტრაცია</h1>
+            <p>გთხოვთ შეიყვანეთ თქვენი მონაცემები</p>
+        </section>
+        <div class="form-Container">
+            <form id="contactForm" class="styledForm">
+                <div class="personalInfo">
+                    <label for="name">შეიყვანეთ თქვენი სახელი და გვარი</label>
+                    <input type="text" id="sure-name" name="name" placeholder="ჩაწერეთ თქვენი სახელი და გვარი">
+                    <p id="name-feedback" class="feedback-msg"></p>
+                </div>
+                <div class="personalInfo">
+                    <label for="name">შეიყვანეთ მომხმარებლის სახელი/username</label>
+                    <input type="text" id="username" name="name" placeholder="ჩაწერეთ მომხმარებლის სახელი/username">
+                    <p id="user-feedback" class="feedback-msg"></p>
+                </div>
+
+                <div class="personalInfo">
+                    <label for="email">ელ. ფოსტის მისამართი</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com">
+                    <p id="email-feedback" class="feedback-msg"></p>
+                </div>
+
+                <div class="personalInfo">
+                    <label for="name">მომხმარებლის პაროლი</label>
+                    <input type="password" id="password" name="password" placeholder="ჩაწერეთ თქვენი პაროლი">
+                    <p id="pass-feedback" class="feedback-msg"></p>
+                </div>
+
+                <div class="personalInfo">
+                    <label for="name">პაროლის დადასტურება</label>
+                    <input type="password" id="confirmPass" name="confirmPass" placeholder="გაიმეორეთ თქვენი პაროლი">
+                    <p id="confirm-feedback" class="feedback-msg"></p>
+                </div>
+
+                <div class="signin">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">დამახსოვრება</label>
+                </div>
+
+                <button type="submit" class="submitBtn">რეგისტრაცია</button>
+                <p id="form-feedback" class="feedback-msg"></p>
+
+                <div class="auth-toggle">
+                    <p id="toggleText">უკვე გაქვთ ანგარიში? <a href="#" id="switchBtn">შესვლა</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footerSection">
+        <div class="copyRight">
+            <p>© 2026 Tbilisi Guide. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html> 
